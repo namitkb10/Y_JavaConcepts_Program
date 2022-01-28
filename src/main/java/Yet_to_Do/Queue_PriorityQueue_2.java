@@ -6,5 +6,4 @@ public class Queue_PriorityQueue_2 {
 		// TODO Auto-generated method stub
 
 	}
-
 }

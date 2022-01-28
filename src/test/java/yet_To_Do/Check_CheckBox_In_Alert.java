@@ -1,9 +1,10 @@
-package xPath_Functions;
+package yet_To_Do;
 
-public class Using_OR_and_AND {
+public class Check_CheckBox_In_Alert {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
+
 }

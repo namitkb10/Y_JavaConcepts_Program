@@ -1,4 +1,5 @@
 package maven_Demo_Partially_Done;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,6 +39,7 @@ public class Login_Page {
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		Thread.sleep(1000);
+		
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		Thread.sleep(5000);

@@ -11,10 +11,10 @@ public class Compare_String {
 				String s1 = new String("TUTORIALSPOINT");
 				String s2 = new String("TUTORIALSPOINT");
 
-				// Reference comparison
+				// Reference/Address comparison
 				System.out.println(s1 == s2); // false
 
-				// Content comparison
+				// Content/Value comparison
 				System.out.println(s1.equals(s2)); // true
 
 				// Integer-type

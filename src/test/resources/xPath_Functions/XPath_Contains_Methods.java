@@ -6,5 +6,4 @@ public class XPath_Contains_Methods {
 		// TODO Auto-generated method stub
 
 	}
-
 }

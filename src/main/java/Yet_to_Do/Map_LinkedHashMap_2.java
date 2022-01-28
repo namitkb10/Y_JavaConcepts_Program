@@ -6,5 +6,4 @@ public class Map_LinkedHashMap_2 {
 		// TODO Auto-generated method stub
 
 	}
-
 }

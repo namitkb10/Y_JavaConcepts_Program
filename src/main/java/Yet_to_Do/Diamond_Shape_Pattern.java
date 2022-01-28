@@ -6,5 +6,4 @@ public class Diamond_Shape_Pattern {
 		// TODO Auto-generated method stub
 
 	}
-
 }

@@ -6,5 +6,4 @@ public class Set_LinkedHashSet_1 {
 		// TODO Auto-generated method stub
 
 	}
-
 }

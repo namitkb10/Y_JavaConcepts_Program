@@ -6,5 +6,4 @@ public class Set_HashSet_1 {
 		// TODO Auto-generated method stub
 
 	}
-
 }

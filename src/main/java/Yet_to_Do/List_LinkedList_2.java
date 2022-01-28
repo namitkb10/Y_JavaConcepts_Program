@@ -6,5 +6,4 @@ public class List_LinkedList_2 {
 		// TODO Auto-generated method stub
 
 	}
-
 }

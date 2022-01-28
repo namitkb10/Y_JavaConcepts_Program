@@ -1,7 +1,5 @@
 package java_Basic_String_Program;
 
-import java.util.Iterator;
-
 public class Palindrome_String {
 
 	public static void main(String[] args) {

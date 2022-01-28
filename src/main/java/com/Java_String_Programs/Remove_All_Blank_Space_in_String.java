@@ -11,7 +11,7 @@ public class Remove_All_Blank_Space_in_String {
 		System.out.print("Enter a String: ");
 		String str = scn.nextLine();
 		str = str.replaceAll("\\s+", "");
-		System.out.println("String after removing all the white space: " + str);
+		System.out.println("String after removing all the white/blank spaces: " + str);
 		System.out.println("==================================================");
 		System.out.println("Method-2");
 		String str1 = "Divya Jyoti";

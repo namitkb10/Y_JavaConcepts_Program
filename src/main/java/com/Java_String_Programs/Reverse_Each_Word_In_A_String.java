@@ -11,6 +11,7 @@ public class Reverse_Each_Word_In_A_String {
 		System.out.print("Enter a String: ");
 		String oStr = scn.nextLine().toLowerCase().trim();
 		scn.close();
+		
 		String[] strArr = oStr.split(" ");
 		for (int i = 0; i < strArr.length; i++) {
 			for (int j = strArr[i].length()-1; j>=0; j--) {
@@ -18,6 +19,7 @@ public class Reverse_Each_Word_In_A_String {
 			}
 			rStr = rStr + " ";
 		}
+		
 		System.out.println("Each Word Reverse String: " + rStr);
 		if(rStr.trim().equals(oStr))
 		{

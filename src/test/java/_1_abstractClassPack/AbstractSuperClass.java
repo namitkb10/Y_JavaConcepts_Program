@@ -1,7 +1,7 @@
 package _1_abstractClassPack;
 
 public abstract class AbstractSuperClass {
-	// data members cant be abstract
+	// data members can't be abstract
 	// https://www.softwaretestingmaterial.com/abstraction-in-java/
 	
 	 public int a = 10;

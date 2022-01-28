@@ -6,5 +6,4 @@ public class Namespace {
 		// TODO Auto-generated method stub
 
 	}
-
 }

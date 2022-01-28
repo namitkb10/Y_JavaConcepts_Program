@@ -6,5 +6,4 @@ public class XPath_normalize_space_method {
 		// TODO Auto-generated method stub
 
 	}
-
 }

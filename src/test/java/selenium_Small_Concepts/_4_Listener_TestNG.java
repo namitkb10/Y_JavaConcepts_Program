@@ -8,7 +8,7 @@ public class _4_Listener_TestNG implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("onTestStart - 1");
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -38,7 +38,7 @@ public class _4_Listener_TestNG implements ITestListener {
 
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("onTestStart - 2");
 	}
 
 	public void onFinish(ITestContext context) {

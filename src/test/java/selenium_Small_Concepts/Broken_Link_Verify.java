@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Verify_Broken_Link {
+public class Broken_Link_Verify {
 
 	static WebDriver driver;
 	static String strUrl;
@@ -29,18 +29,14 @@ public class Verify_Broken_Link {
 		driver.get("https://www.google.com/");
 		
 		List<WebElement> lstWeb = driver.findElements(By.tagName("a"));
-		
 		int size = lstWeb.size();
-		
 		System.out.println("Total Number Of link Found: " + size);
 		
 		for (int i = 0; i < size; i++) {
 			count++;
 			
 			strUrl = lstWeb.get(i).getAttribute("href");
-			
 			URL url = new URL(strUrl);
-			
 			huc = (HttpURLConnection)url.openConnection();
 			
 			huc.setConnectTimeout(2000);

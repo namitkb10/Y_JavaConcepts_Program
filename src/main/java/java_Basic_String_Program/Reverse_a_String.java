@@ -31,7 +31,7 @@ public class Reverse_a_String {
 		}
 		System.out.println("Reverse Of Entered String is: " + revStr2);
 		System.out.println("======================================================================");
-		System.out.println("Method-2");
+		System.out.println("Method-3");
 		String str3="Barnwal"; String revStr3="";
 		char[] ch = str3.toCharArray();
 		

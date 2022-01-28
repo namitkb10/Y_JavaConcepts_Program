@@ -2,6 +2,7 @@ package java_Basic_String_Program;
 
 import java.util.HashMap;
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Remove_Duplicate_Elements_From_Array_Using_HashSet {
 
@@ -18,7 +19,7 @@ public class Remove_Duplicate_Elements_From_Array_Using_HashSet {
 
 	public static void removeDuplicates(int[] a) {
 		// TODO Auto-generated method stub
-		LinkedHashSet<Integer> lhSet = new LinkedHashSet<Integer>();
+		Set<Integer> lhSet = new LinkedHashSet<Integer>();
 		for (int i = 0; i < a.length; i++) {
 			lhSet.add(a[i]);
 		}

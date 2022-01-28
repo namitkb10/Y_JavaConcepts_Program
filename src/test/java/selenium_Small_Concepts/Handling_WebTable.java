@@ -37,7 +37,7 @@ public class Handling_WebTable {
 		
 		for (int i = 1; i <= rowSize; i++) {
 			for (int j = 1; j < colSize; j++) {
-				System.out.print(driver.findElement(By.xpath("/html/body/section[6]/div/div/div[1]/div[2]/table/tbody/tr[" + i + "]/td[" + j + "]")).getText() + "--");
+				System.out.print(driver.findElement(By.xpath("/html/body/section[6]/div/div/div[1]/div[2]/table/tbody/tr[" + i + "]/td[" + j + "]")).getText() + " -- ");
 				Thread.sleep(500);
 			}
 			System.out.println();

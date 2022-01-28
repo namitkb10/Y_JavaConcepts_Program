@@ -6,5 +6,4 @@ public class Xpath_Ends_with {
 		// TODO Auto-generated method stub
 
 	}
-
 }

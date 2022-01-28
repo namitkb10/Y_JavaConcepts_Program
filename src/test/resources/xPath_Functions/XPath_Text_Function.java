@@ -6,5 +6,4 @@ public class XPath_Text_Function {
 		// TODO Auto-generated method stub
 
 	}
-
 }

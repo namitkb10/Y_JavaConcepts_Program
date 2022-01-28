@@ -24,11 +24,11 @@ public class Actions_Class_Example {
 			WebDriverManager.chromedriver().setup();
 			
 			// Required chrome driver to launched
-			//System.setProperty("webdriver.chrome.driver", "../Selenium_Small_Concepts/Driver/chromedriver.exe");
+			// System.setProperty("webdriver.chrome.driver", "../Selenium_Small_Concepts/Driver/chromedriver.exe");
 			driver = new ChromeDriver();
-			//driver.get("https://www.saucedemo.com/");
+			// driver.get("https://www.saucedemo.com/");
 			driver.navigate().to("https://www.nopcommerce.com/en");
-			//driver.manage().window().maximize();
+			// driver.manage().window().maximize();
 			
 			// Set Window Size
 			Dimension setWindowSize = new Dimension(1200, 800);

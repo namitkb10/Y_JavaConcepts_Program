@@ -19,15 +19,14 @@ public class JavaScriptExecutor_Demo {
 		
 		// https://www.guru99.com/execute-javascript-selenium-webdriver.html
 		// https://www.lambdatest.com/blog/how-to-use-javascriptexecutor-in-selenium-webdriver/
-		// 
 		
 		// To use this download WebDriverManager jar into pom.xml
 		WebDriverManager.chromedriver().setup();
-					
+		
 		// Required chrome driver to launched
-		//System.setProperty("webdriver.chrome.driver", "../Selenium_Small_Concepts/Driver/chromedriver.exe");
+		// System.setProperty("webdriver.chrome.driver", "../Selenium_Small_Concepts/Driver/chromedriver.exe");
 		driver = new ChromeDriver();
-		//driver.get("https://www.saucedemo.com/");
+		// driver.get("https://www.saucedemo.com/");
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
@@ -41,7 +40,6 @@ public class JavaScriptExecutor_Demo {
 		
 		// TODO Auto-generated method stub
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		
 
 		webElement = driver.findElement(By.id("Username"));
 		jse.executeScript("arguments[0].value='namitkb10';", webElement);
@@ -49,7 +47,6 @@ public class JavaScriptExecutor_Demo {
 		// driver.findElement(By.xpath("//a[text()='Log in']")).click();
 		webElement = driver.findElement(By.xpath("//input[@value='Log in']"));
 		jse.executeScript("arguments[0].click();", webElement); // button webElement
-		
 		
 		// jse.executeScript("Scroll(0,-3000)");
 		// jse.executeScript("scroll(0, 3300)");
@@ -80,7 +77,7 @@ public class JavaScriptExecutor_Demo {
 
 		// js.executeScript("document.getElementById('enter element id').click();");
 
-		//or
+		// or
 //		js.executeScript("arguments[0].click();", okButton);
 //		1
 //		2
@@ -88,7 +85,7 @@ public class JavaScriptExecutor_Demo {
 //		4
 //		js.executeScript("document.getElementById('enter element id').click();");
 //		 
-//		//or
+//		// or
 //		js.executeScript("arguments[0].click();", okButton);
 //		2. To Type Text in a Text Box without using sendKeys() method
 //

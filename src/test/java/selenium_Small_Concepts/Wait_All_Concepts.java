@@ -64,9 +64,9 @@ public class Wait_All_Concepts {
 				 * before throwing an exception. In such scenarios, the fluent wait is the ideal wait
 				 * to use as this will try to find the element at different frequency until it
 				 * finds it or the final timer runs out.*/
-		
+
 				// https://www.youtube.com/watch?v=WyheLWhk6QE
-		
+
 				Wait<WebDriver> wdWait = new FluentWait<WebDriver>(driver)
 						.withTimeout(Duration.ofSeconds(30))
 						.pollingEvery(Duration.ofSeconds(5))
