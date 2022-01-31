@@ -20,7 +20,7 @@ public class Switch_To_Alert_Interface {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+		// driver.get("https://chandanachaitanya.github.io/selenium-practice-site/?languages=Java&enterText=");
 		driver.get("https://demoqa.com/alerts");
 		
 		driver.findElement(By.id("alertButton")).click();
