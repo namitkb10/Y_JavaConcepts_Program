@@ -1,4 +1,4 @@
-package selenium_Small_Concepts;
+package z_recycle;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -25,7 +25,7 @@ public class Switch_To_New_Tab_and_Perform2 {
 
 		// Maximize the window
 		driver.manage().window().maximize();
-
+		
 		// Launch URL
 		// driver.get("https://www.tutorialspoint.com/about/about_careers.htm");
 		driver.get("https://demoqa.com/browser-windows");
