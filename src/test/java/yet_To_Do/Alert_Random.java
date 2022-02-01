@@ -1,11 +1,14 @@
 package yet_To_Do;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +21,8 @@ public class Alert_Random {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
-		driver.navigate().to("https://optinmonster.com/");
+		//driver.get("https://optinmonster.com/");
+		driver.get("https://intellipaat.com/");
 		
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -26,20 +30,31 @@ public class Alert_Random {
 		Thread.sleep(5000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		
-		for (int i = 0; i < 10; i++) {
-			jse.executeScript("scroll(0,150)");
-			Thread.sleep(500);
+		for (int i = 0; i < 100; i++) {
+			jse.executeScript("window.scrollBy(0,50)", "");
+			Thread.sleep(50);
 		}
 		
-		Set<String> set = driver.getWindowHandles();
+		Set<String> windows = driver.getWindowHandles();
 		
-		Iterator<String> it = set.iterator();
-				
-		while(it.hasNext())
+		if(windows.size()>1)
 		{
-			driver.switchTo().window(it.next());
-			System.out.println(driver.getTitle());
-			//driver.close();
+			Iterator<String> it = windows.iterator();
+			
+			String parentWindow = it.next();
+			String childWindow = it.next();
+			
+			driver.switchTo().window(childWindow);
+			try {
+				WebElement we = driver.findElement(By.className("CloseButton__ButtonElement-sc-79mh24-0 dqLNNr orlando-CloseButton orlando-close orlando-ClosePosition--top-right"));
+				if(we.isDisplayed())
+				{
+					we.click();
+				}
+			} catch (NoSuchElementException ne) {
+				// TODO Auto-generated catch block
+				System.out.println("Alert Window is displayed but unable to click on that window");
+			}
 		}
 	}
 }
