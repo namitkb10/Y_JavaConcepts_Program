@@ -1,4 +1,4 @@
-package java_Basic_String_Program;
+package all_String_Program;
 
 public class Reverse_Each_Word_Of_String {
 
@@ -9,7 +9,7 @@ public class Reverse_Each_Word_Of_String {
 		String strRev = ""; String oStr = "";
 		int count=0;
 		for (int i = 0; i < strArr.length; i++) {
-			count = strArr[i].length();
+			// count = strArr[i].length();
 			strRev="";
 			for (int j = strArr[i].length()-1; j >=0; j--) {
 				strRev = strRev + strArr[i].charAt(j);

@@ -1,4 +1,4 @@
-package java_Basic_String_Program;
+package all_String_Program;
 
 public class Lowercase_To_Uppercase_Conversion {
 

@@ -8,12 +8,12 @@ public class Prime_Number_1 {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
 		System.out.print("Please Enter a Number: ");
-		double num = scn.nextInt();
+		int num = scn.nextInt();
 		scn.close();
 		int flag = 0;
 
 		int temp = (int) Math.sqrt(num);
-		int newNum = (int) (num);
+		int newNum = num;
 
 		if (num == 0 || num == 1) {
 			System.out.println("Entered No " + newNum + " is not a Prime no");

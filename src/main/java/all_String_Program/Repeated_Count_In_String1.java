@@ -1,4 +1,4 @@
-package java_Basic_String_Program;
+package all_String_Program;
 
 import java.util.ArrayList;
 

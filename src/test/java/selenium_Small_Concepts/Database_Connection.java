@@ -19,10 +19,10 @@ public class Database_Connection {
 		// TODO Auto-generated method stub
 		// https://www.youtube.com/watch?v=97Qh1AH9mtw
 		
+		Class.forName("com.mysql.jdbc.Driver");
+		
 		// Database Validation
 		Connection con = DriverManager.getConnection("jdbc:mysql://http:localhost:3030/employee", "username", "password");
-		
-		Class.forName("com.mysql.jdbc.Driver");
 		
 		Statement smt = con.createStatement();
 		

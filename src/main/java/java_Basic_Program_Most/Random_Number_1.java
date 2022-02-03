@@ -16,5 +16,8 @@ public class Random_Number_1 {
 		int x = random.nextInt(500);
 		System.out.println(x);
 		
+		double randomNumber = Math.random();
+		System.out.println("Random No is: " + randomNumber);
+		
 	}
 }

@@ -12,7 +12,7 @@ public class Duplicate_Elements_In_An_Array {
 		int count = 0;
 
 		for (int i = 0; i < strArr.length; i++) {
-			count = 0;
+			count = 1;
 			if (!arrList.contains(strArr[i])) {
 				arrList.add(strArr[i]);
 				for (int j = i + 1; j < strArr.length; j++) {
@@ -21,8 +21,8 @@ public class Duplicate_Elements_In_An_Array {
 					}
 				}
 			}
-			if (count > 0) {
-				System.out.println(strArr[i]);
+			if (count > 1) {
+				System.out.println(strArr[i] + "---" + count);
 			}
 		}
 	}

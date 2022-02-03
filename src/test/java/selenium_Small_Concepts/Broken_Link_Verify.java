@@ -16,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Broken_Link_Verify {
 
 	static WebDriver driver;
-	static String strUrl;
+	static String str;
 	static URL url;
 	static HttpURLConnection huc; 
 	static int count=0;
@@ -35,8 +35,8 @@ public class Broken_Link_Verify {
 		for (int i = 0; i < size; i++) {
 			count++;
 			
-			strUrl = lstWeb.get(i).getAttribute("href");
-			URL url = new URL(strUrl);
+			str = lstWeb.get(i).getAttribute("href");
+			URL url = new URL(str);
 			huc = (HttpURLConnection)url.openConnection();
 			
 			huc.setConnectTimeout(2000);
@@ -45,12 +45,12 @@ public class Broken_Link_Verify {
 			// if(huc.getResponseCode()== HttpURLConnection.HTTP_OK)
 			if(huc.getResponseCode()== 200)
 			{
-				System.out.println(count + " --- " + strUrl + " " + huc.getResponseMessage());
+				System.out.println(count + " --- " + str + " " + huc.getResponseMessage());
 			}
 			// else if(huc.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND)
 			else if(huc.getResponseCode()== 404)
 			{
-				System.out.println(count + " --- " + strUrl + " " + huc.getResponseMessage() + " " + HttpURLConnection.HTTP_NOT_FOUND);
+				System.out.println(count + " --- " + str + " " + huc.getResponseMessage() + " " + HttpURLConnection.HTTP_NOT_FOUND);
 			}
 		}
 	}

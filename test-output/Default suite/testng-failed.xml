@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="maven_Demo_Partially_Done.Hard_Soft_Assert_Demo">
+      <class name="selenium_Small_Concepts._1_Extent_Report">
         <methods>
-          <include name="hard_Soft_Assert"/>
+          <include name="afterTest"/>
+          <include name="test_5"/>
+          <include name="setExtent"/>
+          <include name="test_4"/>
+          <include name="test_1"/>
         </methods>
-      </class> <!-- maven_Demo_Partially_Done.Hard_Soft_Assert_Demo -->
+      </class> <!-- selenium_Small_Concepts._1_Extent_Report -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

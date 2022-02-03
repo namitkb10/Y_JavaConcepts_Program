@@ -16,7 +16,7 @@ public class HashMap_Example {
 		hMap.put(5, "Jyoti");
 		hMap.put(6, "Bharti");
 		
-		for (Map.Entry i : hMap.entrySet()) {
+		for (HashMap.Entry i : hMap.entrySet()) {
 			System.out.println(i.getKey() + " --- " + i.getValue());
 		}
 	}

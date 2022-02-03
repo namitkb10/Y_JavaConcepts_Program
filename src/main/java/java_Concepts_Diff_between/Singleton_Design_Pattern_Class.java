@@ -13,7 +13,7 @@ public class Singleton_Design_Pattern_Class {
 		// Lazy Instantiation: creation of instance when required.
 		
 		// Advantage of Singleton design pattern
-		// Saves memory because object is not created at each request. Only single instance is reused again and again.
+		// Saves memory because object is not created at each request. Only global single instance is reused again and again.
 	}
 
 }
