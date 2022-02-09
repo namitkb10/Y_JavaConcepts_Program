@@ -7,6 +7,7 @@ public class Two_strings_are_anagram {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// LISTEN == SILENT
 		Scanner scn1 = new Scanner(System.in);
 		System.out.print("Enter String 1: ");
 		String str1 = scn1.nextLine().toLowerCase().trim();

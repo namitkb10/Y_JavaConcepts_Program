@@ -20,5 +20,6 @@ public class Equals_CompareTo_Double_Equal {
         // comparing position of character
         System.out.println(str1.compareTo(str1));
         System.out.println(str1.compareTo(str2));
+        System.out.println(str2.compareTo(str1));
 	}
 }

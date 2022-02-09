@@ -10,6 +10,6 @@ public class Occurrences_Of_Given_Character {
         int count2 = s.replace("a", "").length();
         int count = count1-count2;
         
-        System.out.println("Character a repeated: " + count + " times");
+        System.out.println("Character 'a' repeated: " + count + " times");
 	}
 }

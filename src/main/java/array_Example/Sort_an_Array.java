@@ -42,7 +42,7 @@ public class Sort_an_Array {
 		int[] numArr3 = { 10, 30, 50, 80, 20, 40, 20, 10, 50, 70, 60 };
 		//Arrays.sort
 		System.out.println("Need to implement");  
-		System.out.println("Array elements in descending order: " +Arrays.toString(numArr3));  
+		System.out.println("Array elements in descending order: " + Arrays.toString(numArr3));  
 		System.out.println();
 		System.out.println("=====================================================");
 	}

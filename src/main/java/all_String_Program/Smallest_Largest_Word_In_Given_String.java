@@ -5,11 +5,11 @@ public class Smallest_Largest_Word_In_Given_String {
 	public static void main(String[] args){     
 	      String string = "Hardships often prepare ordinary people for an extraordinary destiny";    
 	      String word = "", small = "", large="";    
-	      String[] words = new String[100];    
+	      String[] words = new String[10];    
 	      int length = 0;    
 	      
 	      //Add extra space after string to get the last word in the given string    
-	      string = string + " ";
+	      //string = string + " ";
 	          
 	      for(int i = 0; i < string.length(); i++){    
 	          //Split the string into words    
